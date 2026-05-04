@@ -111,10 +111,6 @@ function Orders() {
                                         {/* Top Section */}
                                         <Box sx={{ backgroundColor: theme.palette.background.default }} className="flex justify-between items-center px-2">
                                             <Typography variant="h5" className="py-2 px-3 max-sm:!text-lg"><FormattedMessage id='orders' /></Typography>
-                                            {/* <Button variant="contained" onClick={() => setPopup('add', 'flex')} className="!bg-purple-500">
-                                                <AddIcon />
-                                                <FormattedMessage id='add_category' />
-                                            </Button> */}
                                         </Box>
 
 
@@ -140,7 +136,6 @@ function Orders() {
                                                         <TableRow sx={{ backgroundColor: theme.palette.background.paper }}>
                                                             <StyledTableCell align={language === 'en' ? "left" : "right"}><FormattedMessage id='id' /></StyledTableCell>
                                                             <StyledTableCell align={language === 'en' ? "left" : "right"}><FormattedMessage id='client' /></StyledTableCell>
-                                                            <StyledTableCell align={language === 'en' ? "left" : "right"}><FormattedMessage id='payment_method' /></StyledTableCell>
                                                             <StyledTableCell align={language === 'en' ? "left" : "right"} className=""><FormattedMessage id='payment_status' /></StyledTableCell>
                                                             <StyledTableCell align={language === 'en' ? "left" : "right"} className=""><FormattedMessage id='status' /></StyledTableCell>
                                                             <StyledTableCell align={language === 'en' ? 'left' : 'right'} className="!text-center"><FormattedMessage id='procedures' /></StyledTableCell>
@@ -165,7 +160,6 @@ function Orders() {
                                                                         <Typography variant="body2">{order.user.full_name}</Typography>
                                                                     </Box>
                                                                 </StyledTableCell>
-                                                                <StyledTableCell align={language === 'en' ? "left" : "right"} className=""><FormattedMessage id={order.payment_method} /></StyledTableCell>
                                                                 <StyledTableCell align={language === 'en' ? "left" : "right"} className="">
                                                                     <select value={order.payment_status} disabled={sendWait} onChange={(e) => changeStatus(order, null, e.target.value)} className="bg-transparent outline-none">
                                                                         <option value='pending'><FormattedMessage id="pending" /></option>
