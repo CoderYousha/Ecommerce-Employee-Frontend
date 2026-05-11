@@ -156,6 +156,7 @@ function Translation() {
             order_management: "Order Management",
             order_management_description: "Change order status",
             settings: "Settings",
+            send_whatsapp: "Send Whatsapp",
         },
         ar: {
             procedures: "الإجراءات",
@@ -315,6 +316,7 @@ function Translation() {
             order_management: "إدارة الطلبات",
             order_management_description: "تعديل حالة الطلب",
             settings: "الإعدادات",
+            send_whatsapp: "إرسال إلى واتساب",
         }
     };
 }

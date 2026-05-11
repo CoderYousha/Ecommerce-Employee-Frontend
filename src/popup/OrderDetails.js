@@ -45,6 +45,7 @@ function OrderDetails({ onClickCancel, order }) {
                     <TextField variant="outlined" label={<FormattedMessage id="building" />} className="w-2/5 max-sm:w-full" value={order?.location.building} aria-readonly />
                     <TextField variant="outlined" label={<FormattedMessage id="floor" />} className="w-2/5 max-sm:w-full max-sm:!mt-3" value={order?.location.floor} aria-readonly />
                 </Box>
+                <a href={"https://wa.me/" + order?.user.whatsapp_phone + "?text=Order ID: #" + order?.id} className="block my-5 bg-green-500 text-white font-bold px-7 py-2 rounded-full !mx-auto w-fit cursor-pointer" target="_blank"><FormattedMessage id="send_whatsapp" /></a>
             </Box>
         </Box>
     );
